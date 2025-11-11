@@ -49,5 +49,23 @@ The ACO algorithm has been implemented based on Singh and Baidya (2013):
 - Pheromone Update: Pheromones are updated based on a fitness function that considers the summed bin weights relative to capacity, raises the sum to a power m, and then divides it by the number of bins used by an ant.
 - Heuristics: Items are selected based on pheromone intensity and item fit to the current bin.
 
-# References
+## How to Run
+1. Open the "ACO.ipynb" notebook.
+2. Select Run All to execute all cells.
+
+**Python version:** 3.12.4
+
+**Libraries used:**
+- \_\_future\_\_
+- numpy
+- random
+- matplotlib
+- multiprocessing
+- time
+
+**How to install the libraries:**
+- pip install numpy pandas matplotlib
+
+
+##  References
 N. K. Singh and S. Baidya, "A novel work for bin packing problem by ant colony optimization," International Journal of Research in Engineering and Technology (IJRET), vol. 2, Special Issue 2, pp. 71–73, Dec. 2013. 
