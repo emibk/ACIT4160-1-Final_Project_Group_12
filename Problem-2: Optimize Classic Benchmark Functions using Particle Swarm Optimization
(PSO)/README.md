@@ -81,7 +81,7 @@ The notebook is divided into three sections:
       - inertia weight w: $w \in [0.4, 0.7, 0.9]$
       - cognitive constant c1: $c1 \in [1.0, 1.5, 2.0]$
       - social constant c2: $c2 \in [1.0, 1.5, 2.0]$
-
+* Reproducibility: Each run of the algorithm uses a pseudo-random number generator initialized with the run number as the seed. 
 
 **3. Implement Hybrid PSO-Nedler Mead**
 * Based on Konduru et al.(2006):
@@ -92,7 +92,7 @@ The notebook is divided into three sections:
    4. Evaluate the objective function for each particle.
    5. Update individual and global bests.
    6. Update velocities using standard PSO equations.
-   8. Assign particles to the k clusters based on minimum distance.
+   8. Assign particles to the k clusters (Either apply K means clustering or assign them to random clusters). 
    9. Apply the Nelder-Mead simplex method to each cluster.
    10. Repeat 3-8 until maximum iterations or early stop condition reached.
 * Tested with the same parameters from section 2.
@@ -108,25 +108,16 @@ The notebook is divided into three sections:
 2. Select Run All to execute all cells.
 
 
-**Python version:** 3.12.4
+**Python version:** 3.12.4 (Recommended)
 
-**Libraries used:**
-- \_\_future\_\_
-- random
-- math
-- numpy
-- matplotlib
-- multiprocessing
-- sympy
-- pandas
-- itertools
+**Packages:**:
+- numpy: 1.26.4
+- matplotlib: 3.8.4
+- pandas: 2.2.2
+- sympy: 1.14.0
 
 **How to install the libraries:**
 - pip install numpy matplotlib sympy pandas
-
-
-
-
 
 
 # References

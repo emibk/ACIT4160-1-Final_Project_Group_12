@@ -194,6 +194,15 @@ For the 6x6 map, switching to SARSA was sufficient.
 
 For the 8x8 environment, the reward structure and the number of episodes were also adjusted.
 
+## Reproducibility
+
+
+Each environment has been initialized with random seed = 123. 
+
+Each episode resets the environment to initial state, using random seed = 123.
+
+Each run of the algorithm utilizes a pseudo-random number generator, 
+with seed = 123 + run number.
 
 # How to Run
 1. Open the "Reinforcement_Learning.ipynb" notebook.
@@ -201,13 +210,12 @@ For the 8x8 environment, the reward structure and the number of episodes were al
 
 **Python version:** 3.12.4
 
-**Libraries used:**
-- matplotlib
-- numpy
-- seaborn
-- pandas
-- gymnasium
-- itertools
+**Packages:**
+- matplotlib: 3.8.4
+- numpy: 1.26.4
+- seaborn: 0.13.2
+- pandas: 2.2.2
+- gymnasium: 1.2.2
 
 **How to install the libraries:**
 - pip install matplotlib numpy seaborn pandas gymnasium

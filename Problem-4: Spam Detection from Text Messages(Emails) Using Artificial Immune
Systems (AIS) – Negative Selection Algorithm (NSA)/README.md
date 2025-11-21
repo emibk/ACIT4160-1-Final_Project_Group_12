@@ -14,11 +14,10 @@ Hamming distance measures the difference between two strings, by counting the nu
 
 ## Dataset
 
-Location: "Data" folder. 
-
-Dataset Source: https://archive.ics.uci.edu/dataset/228/sms+spam+collection
-
-Datafile Format: Each line contains a label ("spam" or "ham") followed by the message text.
+Dataset: This implementation uses the SMS Spam Collection (Almeida and Hidalgo, 2011) 
+dataset, in which each line of the text file contains: 
+- the class label: "ham" for non-spam messages, and "spam" for spam messages
+- the raw SMS text.
 
 ## Notebook Overview
 
@@ -96,26 +95,25 @@ The notebook contains the following sections:
 1. Open the "NSA.ipynb" notebook.
 2. Select Run All to execute all cells.
 
-**Python version:** 3.12.4
+**Python version:** 3.12.4 (Recommended)
 
-**Libraries used:**
-- \_\_future\_\_
-- numpy
-- random
-- pandas
-- matplotlib
-- multiprocessing
-- re
-- string
-- unicodedata
-- html
-- scikit learn 
-- nltk
-- collections
-- 
+**Packages:**
+- numpy: 1.26.4
+- matplotlib: 3.8.4
+- pandas: 2.2.2
+- scikit-learn: 1.4.2
+- nltk: 3.8.1
 
 **How to install the libraries:**
 - pip install numpy pandas matplotlib scikit-learn nltk
+
+**Additional Downloads for NLTK**: Some nltk resources may require to be downloaded separately.
+- Run the following instructions inside a notebook cell:
+```
+import nltk
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+```
 
 
 ## References
